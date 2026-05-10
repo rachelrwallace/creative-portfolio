@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <meta name="description" content="A minimalist graphic design portfolio showcasing creative works.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">PORTFOLIO</a>
+            <nav>
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Minimalist<br>Graphic Design.</h1>
+                <p>Showcasing form, function, and space.</p>
+                <a href="#work" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <div class="container">
+                <h2>Selected Works</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" tabindex="0">
+                        <img src="assets/images/minimalist_poster_1.png" alt="Minimalist geometric poster design in greyscale">
+                        <div class="gallery-overlay">
+                            <h3>Geometric Abstraction</h3>
+                            <p>Poster Design</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0">
+                        <img src="assets/images/minimalist_poster_2.png" alt="Minimalist typography poster design in greyscale">
+                        <div class="gallery-overlay">
+                            <h3>Type in Space</h3>
+                            <p>Typography</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" tabindex="0">
+                        <img src="assets/images/minimalist_branding_1.png" alt="Minimalist branding mockup in greyscale">
+                        <div class="gallery-overlay">
+                            <h3>Corporate Identity</h3>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                    <!-- Empty item for balance if needed, or add more as requested -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I am a graphic designer focused on creating minimalist, high-impact visuals. I believe that less is more, and I use space, typography, and contrast to communicate effectively. My color palette relies heavily on stark contrasts—whites, blacks, and shades of grey—to allow the core message to stand out without distraction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Interested in collaborating or have a project in mind?</p>
+                <a href="mailto:hello@example.com" class="btn btn-outline">Send a Message</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Graphic Design Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
