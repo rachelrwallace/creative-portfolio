@@ -270,12 +270,21 @@ footer p {
 
 .project-image-container {
     width: 100%;
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--hover-bg);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 .project-image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 60vh;
+    width: auto;
     height: auto;
+    object-fit: contain;
     display: block;
     filter: grayscale(100%);
     transition: filter var(--transition-speed) ease;
@@ -320,4 +329,10 @@ footer p {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    
+    .project-image-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
+
